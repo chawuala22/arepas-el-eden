@@ -1,0 +1,23 @@
+.carousel-container{
+   .first-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 2%;
+    p{
+        padding-top: 1%;
+    }
+   }
+   .second-section{
+    padding: 2%;
+   } 
+   
+}
+
+@media (width < 768px) {
+    .carousel-container{
+        .first-section{
+            padding: 2%;
+        }
+    }
+}

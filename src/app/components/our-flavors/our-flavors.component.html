@@ -1,0 +1,26 @@
+<div class="flavors-container">
+  <div class="first-section">
+    <h1>Descubre nuestros sabores</h1>
+    <p>
+      En Arepas El Edén, te ofrecemos una selección de cuatro sabores auténticos:
+    </p>
+  </div>
+  <div class="second-section">
+    <div *ngFor="let flavor of flavors" class="card">
+      <div class="card-info">
+        <h2>{{ flavor.titulo }}</h2>
+        <p>{{ flavor.texto }}</p>
+        <img src="{{flavor.image}}" alt="" />
+        <button type="button" class="btn btn-outline-secondary">{{flavor.buttonTxt}}</button>
+      </div>
+    </div>
+  </div>
+  <div class="three-section">
+    <p>
+      En Arepas El Edén, nos dedicamos a ofrecer la más alta calidad en cada
+      sabor, utilizando ingredientes frescos y técnicas artesanales. ¡Descubre
+      estos cuatro sabores que celebran la riqueza gastronómica de Colombia en
+      cada bocado!"
+    </p>
+  </div>
+</div>
