@@ -1,80 +1,92 @@
-.flavors-container{
-    .first-section{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        padding: 2%;
-        p{
-            padding-top: 1%;
-        }
+.flavors-container {
+  background-color: #8c7a7a;
+  .first-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2%;
+    p {
+      padding-top: 1%;
+      color: aliceblue;
     }
-    .second-section{
+    h1 {
+      color: aliceblue;
+    }
+  }
+  .second-section {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     padding: 2%;
     gap: 2%;
-        .card{
-            .card-info{
-                display: flex;
-                flex-direction: column;
-                padding: 1%;
-                img{
-                    width: 100%;
-                    padding: 1%;
-                }
-            }
-        }
-    }
-    .three-section{
+    .card {
+      background: transparent;
+      border: 1px solid aliceblue;
+      .card-info {
         display: flex;
         flex-direction: column;
-        align-items: center;
-        p{
-            width: 50%;
-            text-align: center;
-            font-weight: bold;
+        padding: 1%;
+        img {
+          width: 100%;
         }
+        h2,
+        p {
+          color: aliceblue;
+        }
+      }
     }
+  }
+  .three-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-bottom: 1px solid aliceblue;
+    p {
+      width: 50%;
+      text-align: center;
+      font-weight: bold;
+      color: aliceblue;
+    }
+  }
 }
 
 @media (width < 768px) {
-    .flavors-container{
-        .first-section{
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            padding: 2%;
-            p{
-                padding-top: 1%;
-            }
+  .flavors-container {
+    .first-section {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 2%;
+      p {
+        padding-top: 1%;
+      }
+    }
+    .second-section {
+      display: grid;
+      grid-template-columns: 1fr;
+      padding: 2%;
+      gap: 2%;
+      .card {
+        .card-info {
+          display: flex;
+          flex-direction: column;
+          img {
+            width: 100%;
+          }
         }
-        .second-section{
-        display: grid;
-        grid-template-columns: 1fr;
+      }
+    }
+    .three-section {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      p {
+        width: 100%;
+        text-align: justify;
+        font-weight: bold;
+        margin-top: 25%;
         padding: 2%;
-        gap: 2%;
-            .card{
-                .card-info{
-                    display: flex;
-                    flex-direction: column;
-                    img{
-                        width: 100%;
-                    }
-                }
-            }
-        }
-        .three-section{
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            
-            p{
-                width: 100%;
-                text-align: justify;
-                font-weight: bold;
-                margin-top: 25%;
-                padding: 2%;
-            }
-        }
-    }  
+      }
+    }
+  }
 }
